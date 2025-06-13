@@ -20,7 +20,7 @@ driver = webdriver.Chrome(
 browser.config.driver = driver
 
 browser.open("https://github.com/pytest-dev/pytest/blob/main/README.rst")
-dowmload_url = browser.element("[data-testid='raw-button']").get(query.attribute("href"))
+download_url = browser.element("[data-testid='raw-button']").get(query.attribute("href"))
 time.sleep(6)
 
 with open("tmp/readme2.rst") as file:
